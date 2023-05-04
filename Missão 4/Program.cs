@@ -15,11 +15,11 @@ public class Program
 
         // Calcular o peso ideal da pessoa de acordo com o sexo
         double pesoIdeal;
-        if (sexo == 'M') // 1) aqui estava assim "char.ToLower(sexo)"
+        if (sexo == 'M' || sexo == 'm') // 1) aqui estava assim "char.ToLower(sexo)"
         {
             pesoIdeal = (72.7 * altura) - 58; // 2) no lugar de * estava +
         }
-        else if (sexo == 'F') // 3) aqui estava assim "char.ToLower(sexo)"
+        else if (sexo == 'F' || sexo == 'f') // 3) aqui estava assim "char.ToLower(sexo)"
         {
             pesoIdeal = (62.1 * altura) - 44.7; // 4) estava faltando multiplicar o 62.1 pela altura
         }
